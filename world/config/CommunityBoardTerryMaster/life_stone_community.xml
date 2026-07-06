@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE list SYSTEM "config.dtd">
+
 <list>    
 	<!-- active --> 
 	<aug id="1" statsId="16171" skillId="3080" skillLvl="10" type="active" itemId="57" itemCount="100" desc="Provokes a target to attack during an ordinary physical attack."/>

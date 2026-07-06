@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="100" levels="15" name="Stun Attack">
 		<table name="#effectPoint">96 100 104 111 115 119 128 132 136 145 150 154 164 169 173</table>

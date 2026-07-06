@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="4500" levels="1" name="Treasure Chest - Level 27">
 		<set name="icon" val="icon.skill0042" />

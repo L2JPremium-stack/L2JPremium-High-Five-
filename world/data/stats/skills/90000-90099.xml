@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="90001" levels="2" name="Mana potion">
 		<table name="#power">1000 1300 </table>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="8500" levels="1" name="Pink Talisman - CON">
 		<set name="icon" val="icon.etc_talisman_event_i00" />

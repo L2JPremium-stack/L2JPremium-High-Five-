@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="1201" levels="33" name="Dryad Root">
 		<table name="#effectPoint">227 235 243 268 277 285 313 322 331 360 369 379 399 408 418 438 448 457 477 486 495 514 523 532 549 566 582 597 611 624 635 646 655</table>

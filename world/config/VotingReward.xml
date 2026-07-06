@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "config.dtd">
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="VotingReward.xsd">
 	<config enableVoteReward="False" />
 	<api zone="Hopzone" id="0" key="" /> <!-- #HOPZONE# 12 hours -->

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="23200" levels="1" name="Penalty Kick Agathion Special Skill - Soccer Ball of Cheering" >
 		<set name="icon" val="icon.skill_agathion_special"/>

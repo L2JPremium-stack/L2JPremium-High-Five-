@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "config.dtd">
 <list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="DailyQuests.xsd">
 	<quest name="ClassSpecificPvPDailyQuest">
 		<display name="Quest de PvP com Classe Especifica" description="Voce deve matar players (Classe Especifica)" enabled="false" />

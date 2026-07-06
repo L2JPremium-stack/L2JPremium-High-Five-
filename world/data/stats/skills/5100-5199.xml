@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="5100" levels="1" name="Cancel Capture B">
 		<set name="magicType" val="MAGIC" />

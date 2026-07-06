@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="5200" levels="8" name="Pet Recharge">
 		<table name="#mpConsume2">96 99 102 110 116 120 122 124</table>

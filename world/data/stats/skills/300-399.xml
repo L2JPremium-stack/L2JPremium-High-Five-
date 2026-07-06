@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="301" levels="5" name="Summon Big Boom">
 		<table name="#itemConsumeCount">3 3 4 4 5</table>

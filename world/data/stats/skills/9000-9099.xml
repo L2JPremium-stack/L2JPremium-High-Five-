@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="9000" levels="1" name="PC room private weapon strengthening order sheet - D grade">
 		<set name="icon" val="icon.skill0000" />

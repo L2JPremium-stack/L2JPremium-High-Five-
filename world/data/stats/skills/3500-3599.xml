@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="3500" levels="1" name="Wooden Set">
 		<set name="icon" val="icon.armor_t06_u_i00" />

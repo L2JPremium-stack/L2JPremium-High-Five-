@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="21200" levels="1" name="Age of Three Kingdoms" >
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />

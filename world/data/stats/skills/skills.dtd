@@ -1,183 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT list (skill)*>
-<!ELEMENT skill (table|set|for|cond|enchant1|enchant2|enchant3|enchant4|enchant5|enchant6|enchant7|enchant8|triggers)*>
-<!ATTLIST skill
-	id CDATA #REQUIRED
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT table (#PCDATA)>
-<!ATTLIST table
-	name CDATA #REQUIRED>
-<!ELEMENT set EMPTY>
-<!ATTLIST set
-	name CDATA #REQUIRED
-	val CDATA #REQUIRED>
-<!ELEMENT enchant1 (table|set)*>
-<!ATTLIST enchant1
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant2 (table|set)*>
-<!ATTLIST enchant2
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant3 (table|set)*>
-<!ATTLIST enchant3
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant4 (table|set)*>
-<!ATTLIST enchant4
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant5 (table|set)*>
-<!ATTLIST enchant5
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant6 (table|set)*>
-<!ATTLIST enchant6
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant7 (table|set)*>
-<!ATTLIST enchant7
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT enchant8 (table|set)*>
-<!ATTLIST enchant8
-	levels CDATA #REQUIRED
-	name CDATA #REQUIRED>
-<!ELEMENT for (add|sub|mul|div|set|enchant|effect|triggers)*>
-<!ELEMENT add EMPTY>
+<!ELEMENT add ANY>
 <!ATTLIST add
-	order CDATA #REQUIRED
-	stat CDATA #REQUIRED
-	val CDATA #IMPLIED>
-<!ELEMENT sub EMPTY>
-<!ATTLIST sub
-	order CDATA #REQUIRED
-	stat CDATA #REQUIRED
-	val CDATA #IMPLIED>
-<!ELEMENT mul EMPTY>
-<!ATTLIST mul
-	order CDATA #REQUIRED
-	stat CDATA #REQUIRED
-	val CDATA #IMPLIED>
-<!ELEMENT div EMPTY>
-<!ATTLIST div
-	order CDATA #REQUIRED
-	stat CDATA #REQUIRED
-	val CDATA #IMPLIED>
-<!ELEMENT bas EMPTY>
-<!ATTLIST bas
-	stat CDATA #REQUIRED
-	val CDATA #REQUIRED>
-<!ELEMENT enchant EMPTY>
-<!ATTLIST enchant
-	order CDATA #REQUIRED
-	stat CDATA #REQUIRED
-	val CDATA #REQUIRED>
-<!ELEMENT effect (add|sub|mul|div|set|def|and|or|not|player|target|has|using|game|zone|triggers)*>
-<!ATTLIST effect
-	name CDATA #REQUIRED
-	val CDATA #IMPLIED
-	count CDATA #IMPLIED
-	time CDATA #IMPLIED
-	abnormal CDATA #IMPLIED
-	stackType CDATA #IMPLIED
-	stackType2 CDATA #IMPLIED
-	stackOrder CDATA #IMPLIED
-	applyOnCaster CDATA #IMPLIED
-	applyOnSummon CDATA #IMPLIED
-	displayId CDATA #IMPLIED
-	displayLevel CDATA #IMPLIED
-	chance CDATA #IMPLIED
-	cancelOnAction CDATA #IMPLIED
-	isOffensive CDATA #IMPLIED
-	isReflectable CDATA #IMPLIED>
-<!ELEMENT def EMPTY>
-<!ATTLIST def
-	name CDATA #REQUIRED
-	val CDATA #REQUIRED>
-<!ELEMENT cond (and|or|not|player|target|has|using|game|zone)*>
+  order CDATA #IMPLIED
+  stat CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT and ANY>
+<!ELEMENT cond ANY>
 <!ATTLIST cond
-	msgId CDATA #IMPLIED
-	addName CDATA #IMPLIED>
-<!ELEMENT and (and|or|not|player|target|has|using|game|zone)*>
-<!ELEMENT or (and|or|not|player|target|has|using|game|zone)*>
-<!ELEMENT not (and|or|not|player|target|has|using|game|zone)*>
-<!ELEMENT player EMPTY>
-<!ATTLIST player
-	residence CDATA #IMPLIED
-	olympiad CDATA #IMPLIED
-	race CDATA #IMPLIED
-	instance_zone CDATA #IMPLIED
-	classId CDATA #IMPLIED
-	minLevel CDATA #IMPLIED
-	maxLevel CDATA #IMPLIED
-	maxPK CDATA #IMPLIED
-	percentHP CDATA #IMPLIED
-	percentMP CDATA #IMPLIED
-	percentCP CDATA #IMPLIED
-	agathion CDATA #IMPLIED
-	cubic CDATA #IMPLIED
-	fightClub CDATA #IMPLIED
-	hasBuff CDATA #IMPLIED
-	hasBuffId CDATA #IMPLIED
-	riding CDATA #IMPLIED
-	summonSiegeGolem CDATA #IMPLIED
-	resting CDATA #IMPLIED
-	moving CDATA #IMPLIED
-	running CDATA #IMPLIED
-	standing CDATA #IMPLIED
-	flying CDATA #IMPLIED
-	flyingTransform CDATA #IMPLIED
-	behind CDATA #IMPLIED
-	front CDATA #IMPLIED
-	side CDATA #IMPLIED
-	chaotic CDATA #IMPLIED
-	olympiad CDATA #IMPLIED
-	minDamage CDATA #IMPLIED
-	maxDamage CDATA #IMPLIED>
-<!ELEMENT target EMPTY>
-<!ATTLIST target
-	aggro CDATA #IMPLIED
-	castle_door CDATA #IMPLIED
-	clan CDATA #IMPLIED
-	direction CDATA #IMPLIED
-	forbiddenClass CDATA #IMPLIED
-	hasBuff CDATA #IMPLIED
-	hasBuffId CDATA #IMPLIED
-	hasForbiddenSkill CDATA #IMPLIED
-	mob CDATA #IMPLIED
-	mobId CDATA #IMPLIED
-	npc_class CDATA #IMPLIED
-	percentHP CDATA #IMPLIED
-	percentMP CDATA #IMPLIED
-	percentCP CDATA #IMPLIED
-	playable CDATA #IMPLIED
-	player CDATA #IMPLIED
-	playerRace CDATA #IMPLIED
-	race CDATA #IMPLIED
-	summon CDATA #IMPLIED
-	active_skill_id CDATA #IMPLIED>
-<!ELEMENT has EMPTY>
-<!ATTLIST has
-	skill CDATA #IMPLIED
-	skillId CDATA #IMPLIED>
-<!ELEMENT using EMPTY>
-<!ATTLIST using
-	kind CDATA #IMPLIED
-	armor CDATA #IMPLIED
-	skill CDATA #IMPLIED
-	slotitem CDATA #IMPLIED>
-<!ELEMENT game EMPTY>
+  addName CDATA #IMPLIED
+  msgId CDATA #IMPLIED
+>
+<!ELEMENT def ANY>
+<!ATTLIST def
+  name CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT effect ANY>
+<!ATTLIST effect
+  abnormal CDATA #IMPLIED
+  abnormalLvl CDATA #IMPLIED
+  abnormalTime CDATA #IMPLIED
+  abnormalType CDATA #IMPLIED
+  applyOnCaster CDATA #IMPLIED
+  applyOnSummon CDATA #IMPLIED
+  cancelOnAction CDATA #IMPLIED
+  chance CDATA #IMPLIED
+  count CDATA #IMPLIED
+  displayId CDATA #IMPLIED
+  displayLevel CDATA #IMPLIED
+  effectPower CDATA #IMPLIED
+  effectType CDATA #IMPLIED
+  isOffensive CDATA #IMPLIED
+  isReflectable CDATA #IMPLIED
+  name CDATA #IMPLIED
+  noicon CDATA #IMPLIED
+  stackOrder CDATA #IMPLIED
+  stackType CDATA #IMPLIED
+  stackType2 CDATA #IMPLIED
+  time CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT enchant1 ANY>
+<!ATTLIST enchant1
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant2 ANY>
+<!ATTLIST enchant2
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant3 ANY>
+<!ATTLIST enchant3
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant4 ANY>
+<!ATTLIST enchant4
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant5 ANY>
+<!ATTLIST enchant5
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant6 ANY>
+<!ATTLIST enchant6
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant7 ANY>
+<!ATTLIST enchant7
+  name CDATA #IMPLIED
+>
+<!ELEMENT enchant8 ANY>
+<!ATTLIST enchant8
+  name CDATA #IMPLIED
+>
+<!ELEMENT for ANY>
+<!ELEMENT game ANY>
 <!ATTLIST game
-	night CDATA #IMPLIED>
-<!ELEMENT zone EMPTY>
-<!ATTLIST zone
-	type CDATA #REQUIRED>
-<!ELEMENT triggers (trigger)*>
-<!ELEMENT trigger (and|or|not|player|target|has|using|game|zone)*>
+  night CDATA #IMPLIED
+>
+<!ELEMENT has ANY>
+<!ATTLIST has
+  skill CDATA #IMPLIED
+  success CDATA #IMPLIED
+>
+<!ELEMENT list ANY>
+<!ELEMENT mul ANY>
+<!ATTLIST mul
+  order CDATA #IMPLIED
+  stat CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT not ANY>
+<!ELEMENT or ANY>
+<!ELEMENT player ANY>
+<!ATTLIST player
+  agathion CDATA #IMPLIED
+  classId CDATA #IMPLIED
+  cubic CDATA #IMPLIED
+  damage CDATA #IMPLIED
+  flying CDATA #IMPLIED
+  flyingTransform CDATA #IMPLIED
+  hasBuffId CDATA #IMPLIED
+  instance_zone CDATA #IMPLIED
+  maxLevel CDATA #IMPLIED
+  maxPK CDATA #IMPLIED
+  minLevel CDATA #IMPLIED
+  moving CDATA #IMPLIED
+  olympiad CDATA #IMPLIED
+  percentCP CDATA #IMPLIED
+  percentHP CDATA #IMPLIED
+  percentMP CDATA #IMPLIED
+  resting CDATA #IMPLIED
+  riding CDATA #IMPLIED
+  running CDATA #IMPLIED
+  standing CDATA #IMPLIED
+  summon_siege_golem CDATA #IMPLIED
+>
+<!ELEMENT set ANY>
+<!ATTLIST set
+  name CDATA #IMPLIED
+  order CDATA #IMPLIED
+  stat CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT skill ANY>
+<!ATTLIST skill
+  id CDATA #IMPLIED
+  levels CDATA #IMPLIED
+  name CDATA #IMPLIED
+>
+<!ELEMENT sub ANY>
+<!ATTLIST sub
+  order CDATA #IMPLIED
+  stat CDATA #IMPLIED
+  val CDATA #IMPLIED
+>
+<!ELEMENT table ANY>
+<!ATTLIST table
+  name CDATA #IMPLIED
+>
+<!ELEMENT target ANY>
+<!ATTLIST target
+  castledoor CDATA #IMPLIED
+  direction CDATA #IMPLIED
+  forbiddenClassIds CDATA #IMPLIED
+  hasBuff CDATA #IMPLIED
+  hasBuffId CDATA #IMPLIED
+  hasForbiddenSkill CDATA #IMPLIED
+  mobId CDATA #IMPLIED
+  npc_class CDATA #IMPLIED
+  percentHP CDATA #IMPLIED
+  playerRace CDATA #IMPLIED
+  playerSameClan CDATA #IMPLIED
+  pvp CDATA #IMPLIED
+  race CDATA #IMPLIED
+>
+<!ELEMENT trigger ANY>
 <!ATTLIST trigger
-	id CDATA #REQUIRED
-	level CDATA #REQUIRED
-	type CDATA #REQUIRED
-	chance CDATA #REQUIRED>
+  chance CDATA #IMPLIED
+  id CDATA #IMPLIED
+  level CDATA #IMPLIED
+  type CDATA #IMPLIED
+>
+<!ELEMENT triggers ANY>
+<!ELEMENT using ANY>
+<!ATTLIST using
+  armor CDATA #IMPLIED
+  kind CDATA #IMPLIED
+  skill CDATA #IMPLIED
+>
+<!ELEMENT zone ANY>
+<!ATTLIST zone
+  type CDATA #IMPLIED
+>

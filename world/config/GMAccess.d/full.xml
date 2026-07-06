@@ -2,7 +2,7 @@
 <!DOCTYPE list SYSTEM "config.dtd">
 <list>
 	<char>
-		<PlayerID set="268481801"/>
+		<PlayerID set="268481824"/>
 		<IsGM set="true"/>
 		<CanUseGMCommand set="true"/>
 		<CanAnnounce set="true"/>

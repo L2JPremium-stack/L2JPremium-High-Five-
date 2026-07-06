@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="5300" levels="9" name="NPC(party) - Physical Range Long Range Attack - Dark">
 		<table name="#mpConsume2">227 234 240 246 250 252 254 256 259</table>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="2900" levels="1" name="Ancient Herb - Slayer" >
 		<set name="magicType" val="SPECIAL" />

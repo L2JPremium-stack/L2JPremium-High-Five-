@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "skills.dtd">
 <list>
 	<skill id="24001" levels="1" name="Support Power Cardinal">
 		<set name="icon" val="icon.skill3123" />
